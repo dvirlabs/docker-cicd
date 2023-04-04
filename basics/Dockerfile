@@ -4,5 +4,6 @@ WORKDIR /app
 ADD . /app
 RUN echo " this is a test "
 RUN npm install
+RUN "echo hello world"
 EXPOSE 3000
 CMD npm start
