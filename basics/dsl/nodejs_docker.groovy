@@ -14,7 +14,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('dvirlabs/jenkins-lab')
             tag('nodejs-dsl-docker}')
-            registryCredentials('DockerHub_Auth')
+            registryCredentials('Auth_To_DockerHub')
             buildContext('./basics/')
             forcePull(false)
             forceTag(false)
